@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeringAbies.com - Toko Kue Kering Hits</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Kering<span>Abies</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#member">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-content">
+        <h1>Kelezatan di Setiap Gigitan</h1>
+        <p>
+          Premium cookies dengan resep rahasia, dibuat dengan cinta untuk
+          menemani momen spesial Anda.
+        </p>
+        <a href="#gallery" class="btn">Lihat Produk</a>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Tentang KeringAbies</h2>
+        <p>
+          KeringAbies.com adalah destinasi utama bagi pecinta kue kering
+          berkualitas tinggi. Terinspirasi dari standar kelezatan legendaris,
+          kami menghadirkan varian Nastar, Kastengel, hingga Putri Salju dengan
+          bahan premium tanpa pengawet.
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery" class="section bg-light">
+      <div class="container">
+        <h2>Galeri Produk Kami</h2>
+        <div class="gallery-grid">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=400"
+              alt="Nastar"
+            />
+            <h3>Nastar Klasik</h3>
+            <p>Rp 85.000</p>
+            <button class="btn-buy" onclick="addToCart('Nastar Klasik', 85000)">
+              Beli Sekarang
+            </button>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1590080873978-973a4193532f?q=80&w=400"
+              alt="Kastengel"
+            />
+            <h3>Kastengel Keju</h3>
+            <p>Rp 95.000</p>
+            <button
+              class="btn-buy"
+              onclick="addToCart('Kastengel Keju', 95000)"
+            >
+              Beli Sekarang
+            </button>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=400"
+              alt="Choco Chip"
+            />
+            <h3>Choco Chip Premium</h3>
+            <p>Rp 75.000</p>
+            <button
+              class="btn-buy"
+              onclick="addToCart('Choco Chip Premium', 75000)"
+            >
+              Beli Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Proses Pembuatan</h2>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light">
+      <div class="container">
+        <h2>Daftar Harga Grosir</h2>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Paket</th>
+              <th>Isi</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paket Hemat</td>
+              <td>3 Toples Random</td>
+              <td>Rp 220.000</td>
+            </tr>
+            <tr>
+              <td>Paket Sultan</td>
+              <td>6 Toples Lengkap</td>
+              <td>Rp 450.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="member" class="section">
+      <div class="container">
+        <h2>Tim Kami (Kelompok)</h2>
+        <div class="member-list">
+          <p>1. Nama Anggota 1 | 2. Nama Anggota 2 | 3. Nama Anggota 3</p>
+          <p>4. Nama Anggota 4 | 5. Nama Anggota 5 | 6. Nama Anggota 6</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <div class="contact-info">
+          <p>📸 Instagram: @KeringAbies_Real</p>
+          <p>📧 Email: halo@keringabies.com</p>
+          <p>📞 WhatsApp: 0812-3456-7890</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <h3>🛒 Checkout</h3>
+        <p id="item-info"></p>
+        <button onclick="checkout()" class="btn">Konfirmasi Pesanan</button>
+        <button onclick="closeModal()" class="btn-close">Batal</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 KeringAbies.com | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
