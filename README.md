@@ -12,6 +12,6 @@ Nama Anggota :
 5. Adel
 6. Bibi
 
-LINK WEBSITE : http://127.0.0.1:5500/TUGAS%20AKHIR%20KELOMPOK%202/index.html
+LINK WEBSITE : http://127.0.0.1:5500/TUGAS%20AKHIR%20KELOMPOK%202/index.html](https://thecodingstar02.github.io/KueKeringAbies_Kelompok4_Kelas8/
 
 
